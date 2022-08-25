@@ -11,6 +11,7 @@ app.use(express.static('public'))
 //Llamada al router.
 app.use('/', require('./routes/router'))
 
-app.listen(3000, () => {
+const PORT = 5000;
+app.listen(process.env.PORT || PORT, () => {
     console.log('Server is running on http://localhost:3000')
 })
