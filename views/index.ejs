@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/styles.css">
         <title>Portafolio de Adaly</title>
@@ -18,7 +18,9 @@
             </div>
             <div id="div-index-proyectos">
                 <a href="/proyectos">
-                    <p id="nav-proyectos">Proyectos</p>
+                    <span id="span-proyectos">
+                        <p id="nav-proyectos">Proyectos</p>
+                    </span>
                 </a>
             </div>
         </nav>
@@ -121,26 +123,36 @@
             <!--Redes sociales o contacto.-->
             <div id="contacto">
                 <h3>Contacto</h3>
-                <div id="div-linkedin">
-                    <a href="https://www.linkedin.com/in/alexis-adaly-m-961741105" target="_blank" id="enlace-linkedin">
-                        <img src="img/linkedin.png" alt="linkedin" id="logo-linkedin">
-                        <span>Adaly Manzanares</span>
-                    </a>
+                <div id="medios1">
+                    <div id="div-linkedin">
+                        <a href="https://www.linkedin.com/in/alexis-adaly-m-961741105" target="_blank" id="enlace-linkedin">
+                            <img src="img/linkedin.png" alt="linkedin" id="logo-linkedin" class="contacto">
+                            <span>Adaly Manzanares</span>
+                        </a>
+                    </div>
+                    <div id="div-correo">
+                        <a href="mailto:adalymmoncada@gmail.com" id="enlace-correo">
+                            <img src="img/correos-electronicos.png" alt="correo" id="logo-correo" class="contacto">
+                            <span>Envíame un correo</span>
+                        </a>
+                    </div>
                 </div>
-                <div id="div-correo">
-                    <a href="#" id="enlace-correo">
-                        <img src="img/correos-electronicos.png" alt="correo" id="logo-correo">
-                        <span>Envíame un correo</span>
-                    </a>
-                </div>
-                <div id="div-telefono">
-                    <a href="#" id="enlace-telefono">
-                        <img src="img/telefono-inteligente.png" alt="telefono" id="logo-telefono">
-                        <span>Hazme una llamada</span>
-                    </a>
+                <div id="medios2">
+                    <div id="div-telefono">
+                        <a href="tel:+5219186948721" id="enlace-telefono">
+                            <img src="img/telefono-inteligente.png" alt="telefono" id="logo-telefono" class="contacto">
+                            <span>Hazme una llamada</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
+        <footer>
+            <div id="div-footer">
+                <p>© Adaly Manzanares</p>
+                <p>Todos los derechos reservados.</p> 
+            </div>
+        </footer>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
         <script src="js/index.js"></script>
     </body>
