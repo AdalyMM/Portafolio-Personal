@@ -746,6 +746,7 @@
         color: black;
         font-size: .925rem;
         font-weight: bold;
+        border-radius: 0.625rem;
     }
 
     #logo-linkedin{
@@ -775,6 +776,7 @@
         color: black;
         font-size: .925rem;
         font-weight: bold;
+        border-radius: 0.625rem;
     }
 
     #logo-correo{
@@ -805,6 +807,7 @@
         color: black;
         font-size: .925rem;
         font-weight: bold;
+        border-radius: 0.625rem;
     }
 
     #logo-telefono{
@@ -2531,7 +2534,7 @@
     }
 }
 
-@media (min-width: 1350px) {
+@media (min-width: 1350px) and (max-width: 1400px) {
     html{
         font-family: 'Poppins', sans-serif;
         background-image: url('https://media3.giphy.com/media/IeSXccYMz3K4U/giphy.gif?cid=ecf05e47crybhbyzgx0vsdol91uxl1d0w6ti48mall60wr8u&rid=giphy.gif&ct=g');/*url('/img/food-pixel-art.gif');url('https://images.pexels.com/photos/1353938/pexels-photo-1353938.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');*/
@@ -2543,6 +2546,7 @@
     }
 
     body{
+        margin: 0;
         width: 100%;
         min-height: 100%;
         overflow-x: hidden;
@@ -2555,11 +2559,12 @@
     }
 
     nav{
-        margin-left: /*300px;*/18.75rem;
-        margin-right: /*300px;*/18.75rem;
+        margin: 0;
         height: /*55px;*/3.4375rem;
+        width: 100%;
         position: fixed;
         display: flex;
+        justify-content: space-between;
         border-radius: /*10px;*/0.625rem;
         top: 0;
         -webkit-backdrop-filter: blur(/*20px*/1.25rem);
@@ -2567,9 +2572,9 @@
     }
 
     #div-index-ref{
-        width: /*200px;*/12.5rem;
+        width: 12.5rem;
         height: /*50px;*/3.125rem;
-        margin-right: /*398px;*/24.875rem;
+        margin-left: 18.75rem;
         border-color: rgb(255, 234, 166);
         border-style: solid;
         border-radius: /*10px;*/0.625rem;
@@ -2603,6 +2608,7 @@
     #div-index-proyectos{
         width: /*140px;*/8.75rem;
         height: /*50px;*/3.125rem;
+        margin-right: 18.75rem;
         border-color: rgb(255, 234, 166);
         border-style: solid;
         border-radius: /*10px;*/0.625rem;
@@ -2904,6 +2910,436 @@
         color: black;
         font-size: /*18px;*/1.125rem;
         font-weight: bold;
+    }
+
+    #logo-telefono{
+        width: /*30px;*/1.875rem;
+        height: /*30px;*/1.875rem;
+        margin: /*5px;*/0.3125rem;
+    }
+
+    #div-linkedin:hover #logo-linkedin{
+        animation: fliplinkedin 3s infinite;
+    }
+
+    @keyframes fliplinkedin {
+        0%,50% {
+        transform: rotate(360deg); 
+        }
+    }
+
+    #div-correo:hover #logo-correo{
+        animation: flipCorreo 3s infinite;
+    }
+
+    @keyframes flipCorreo {
+        0%,50% {
+        transform: rotate(360deg); 
+        }
+    }
+
+    #div-telefono:hover #logo-telefono{
+        animation: flipTel 3s infinite;
+    }
+
+    @keyframes flipTel {
+        0%,50% {
+        transform: rotate(360deg); 
+        }
+    }
+
+    #div-footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: /*10px;*/0.625rem;
+        margin-left: /*150px;*/9.375rem;
+        margin-right: /*150px;*/9.375rem;
+    }
+}
+
+@media (min-width: 1401px) and (max-width: 2000px) {
+    html{
+        font-family: 'Poppins', sans-serif;
+        background-image: url('https://media3.giphy.com/media/IeSXccYMz3K4U/giphy.gif?cid=ecf05e47crybhbyzgx0vsdol91uxl1d0w6ti48mall60wr8u&rid=giphy.gif&ct=g');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        font-size: 24px;
+        height: 100%;
+    }
+
+    body{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        min-height: 100%;
+        overflow-x: hidden;
+    }
+
+    #principal{
+        margin-left: 8rem;
+        margin-right: 8rem;
+        margin-top: /*70px; */4.375rem;
+    }
+
+    nav{
+        margin: 0;
+        width: 100%;
+        height: /*55px;*/3.4375rem;
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        border-radius: /*10px;*/0.425rem;
+        z-index: 1;
+        top: 0;
+        -webkit-backdrop-filter: blur(1rem);
+        backdrop-filter: blur(1rem);
+    }
+
+    #div-index-ref{
+        width: /*200px;*/12.5rem;
+        height: /*50px;*/3.125rem;
+        margin-left: 8rem;
+        border-color: rgb(255, 234, 166);
+        border-style: solid;
+        border-radius: /*10px;*/0.625rem;
+        text-align: center;
+    }
+
+    #div-index-ref a{
+        width: /*200px;*/12.5rem;
+        height: /*50px;*/3.125rem;
+        text-decoration: none;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    #span-title{
+        display: inline-flex;
+        justify-content: center;
+        color: rgb(255, 255, 255);
+    }
+
+    #nav-nombre{
+        font-weight: bold;
+        font-size: 1.125rem;
+    }
+
+    #div-index-ref a:visited{
+        color: white;
+    }
+
+    #div-index-proyectos{
+        width: /*140px;*/8.75rem;
+        height: /*50px;*/3.125rem;
+        margin-right: 8rem;
+        border-color: rgb(255, 234, 166);
+        border-style: solid;
+        border-radius: /*10px;*/0.625rem;
+        text-align: center;
+    }
+
+    #div-index-proyectos a{
+        width: /*140px;*/8.75rem;
+        height: /*50px;*/3.125rem;
+        text-decoration: none;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    #span-proyectos{
+        display: inline-flex;
+        justify-content: center;
+        color: rgb(255, 255, 255);
+    }
+
+    #nav-proyectos{
+        font-size: /*18px;*/1.125rem;
+        font-weight: bold;
+    }
+
+    #div-index-proyectos a:visited{
+        color: white;
+    }
+
+    #logo-animado{
+        height: /*250px;*/15.625rem;
+        border-radius: /*10px;*/0.625rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #div-into-logo-animado{
+        width: /*400px;*/25rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: /*50px;*/3.125rem;
+        font-family: 'Arima Madurai', cursive;
+        color: white;
+    }
+
+    #caracter1{
+        --i: 1;
+    }
+
+    #caracter2{
+        --i: 2;
+    }
+
+    #caracter3{
+        --i: 3;
+    }
+
+    #caracter4{
+        --i: 4;
+    }
+
+    #caracter5{
+        --i: 5;
+    }
+
+    #caracter6{
+        --i: 6;
+    }
+
+    #caracter7{
+        --i: 7;
+    }
+
+    #caracter8{
+        --i: 8;
+    }
+
+    #caracter9{
+        --i: 9;
+    }
+
+    #caracter10{
+        --i: 10;
+    }
+
+    #caracter11{
+        --i: 11;
+    }
+
+    #caracter12{
+        --i: 12;
+    }
+
+    #caracter13{
+        --i: 13;
+    }
+
+    #caracter14{
+        --i: 14;
+    }
+
+    #caracter15{
+        --i: 15;
+    }
+
+    #div-into-logo-animado span{
+        animation: flipY 4s infinite;
+        animation-delay: calc(.2s * var(--i));
+    }
+
+    @keyframes flipY {
+        0%,50% {
+        transform: rotateY(360deg) 
+        }
+    }
+
+    #presentacion-corta{
+        text-align: center;
+        background-color: rgb(241, 228, 149);
+        border-radius: /*10px;*/0.625rem;
+        height: /*50px;*/3.125rem;
+    }
+
+    #presentacion-corta p{
+        padding-top: /*10px;*/0.625rem;
+    }
+
+    #nombre-habilidades h1{
+        margin-bottom: 0;
+    }
+
+    #nombre-habilidades p{
+        margin-top: 0;
+    }
+
+    #proyectos{
+        text-align: justify;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #div-boton{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #div-boton a{
+        width: /*170px;*/10.625rem;
+        height: /*40px;*/2.5rem;
+        text-decoration: none;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        border-radius: /*10px;*/0.625rem;
+        border-style: solid;
+        border-color: rgb(241, 228, 149);
+        background-color: rgb(241, 228, 149);
+        color: black;
+    }
+
+    #div-boton a:visited{
+        color: black;
+    }
+
+    #boton-portafolio{
+        font-size: /*18px;*/1.125rem;
+    }
+
+    .div-biografia{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .fechas-biografia{
+        font-weight: bold;
+        margin-right: /*10px;*/0.625rem;
+        width: /*120px;*/7.5rem;
+        white-space: nowrap;
+    }
+
+    #logos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .logos-tecnologias{
+        width: 6.25rem;
+        height: 6.25rem;
+        margin: 0.625rem;
+        transform: scale(1);
+        transition: transform 1s;
+    }
+
+    .logos-tecnologias:hover {
+        transform: scale(1.5);
+        transition: 1s;
+    }
+
+    #medios1{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #medios2{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #div-linkedin{
+        width: 15rem;
+        height: 2.5rem;
+        border-style: solid;
+        border-color: rgb(241, 228, 149);
+        border-radius: 0.625rem;
+        align-items: center;
+        margin-right: 2.9375rem;
+    }
+
+    #enlace-linkedin{
+        width: 15rem;
+        height: 2.5rem;
+        text-decoration: none;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        background-color: rgb(241, 228, 149);
+        /*color: #0474B4;*/
+        color: black;
+        font-size: 1.125rem;
+        font-weight: bold;
+        border-radius: 0.625rem;
+    }
+
+    #logo-linkedin{
+        width: 1.875rem;
+        height: 1.875rem;
+        margin: 0.3125rem;
+    }
+
+    #div-correo{
+        width: 15rem;
+        height: 2.5rem;
+        border-style: solid;
+        border-color: rgb(241, 228, 149);
+        border-radius: 0.625rem;
+        align-items: center;
+    }
+
+    #enlace-correo{
+        width: 15rem;
+        height: 2.5rem;
+        text-decoration: none;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        background-color: rgb(241, 228, 149);
+        /*color: #0474B4;*/
+        color: black;
+        font-size: 1.125rem;
+        font-weight: bold;
+        border-radius: 0.625rem;
+    }
+
+    #logo-correo{
+        width: /*30px;*/1.875rem;
+        height: /*30px;*/1.875rem;
+        margin: /*5px;*/0.3125rem;
+    }
+
+    #div-telefono{
+        width: /*240px;*/15rem;
+        height: /*40px;*/2.5rem;
+        border-style: solid;
+        border-color: rgb(241, 228, 149);
+        border-radius: /*10px;*/0.625rem;
+        align-items: center;
+        margin-top: /*10px;*/0.625rem;
+    }
+
+    #enlace-telefono{
+        width: /*240px;*/15rem;
+        height: /*40px;*/2.5rem;
+        text-decoration: none;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        background-color: rgb(241, 228, 149);
+        /*color: #0474B4;*/
+        color: black;
+        font-size: /*18px;*/1.125rem;
+        font-weight: bold;
+        border-radius: 0.625rem;
     }
 
     #logo-telefono{
